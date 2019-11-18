@@ -38,7 +38,7 @@ RUN mkdir -p $PRESTO_HOME && \
 
 # Need to work with python2
 # See: https://github.com/prestodb/presto/issues/4678
-ENV PYTHON3_DEBIAN_VERSION 3.7.2-2
+ENV PYTHON2_DEBIAN_VERSION 2.7.13-2
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		python="${PYTHON2_DEBIAN_VERSION}" \
 	&& rm -rf /var/lib/apt/lists/* \
