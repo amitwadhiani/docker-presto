@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-slim
+FROM openjdk:11-slim
 
 ARG MIRROR="https://repo1.maven.org/maven2/com/facebook/presto"
 ARG PRESTO_VERSION="0.216"
